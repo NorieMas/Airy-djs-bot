@@ -10,7 +10,7 @@ dotenv.config()
 
 loadCommands()
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] })
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers] })
 const appStore = useAppStore()
 appStore.client = client
 
